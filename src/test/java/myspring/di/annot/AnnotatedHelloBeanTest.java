@@ -27,7 +27,7 @@ public class AnnotatedHelloBeanTest {
 	@Test
 	void helloBeansCons() {
 		assertEquals("Hello 어노테이션생성자", helloCons.sayHello());
-		hello.print();
+		helloCons.print();
 	}
 	
 	
