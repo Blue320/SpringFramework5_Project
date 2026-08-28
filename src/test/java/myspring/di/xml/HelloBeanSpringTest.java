@@ -1,7 +1,8 @@
 package myspring.di.xml;
 
-import javax.annotation.Resource;
 import static org.junit.jupiter.api.Assertions.*;
+
+import javax.annotation.Resource;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
