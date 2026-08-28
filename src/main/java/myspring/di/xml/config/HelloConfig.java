@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.Scope;
 import org.springframework.core.env.Environment;
 
 import myspring.di.xml.ConsolePrinter;
@@ -36,7 +37,7 @@ public class HelloConfig {
 		<property name="printer" ref="strPrinter" />
 		</bean>
 	 */
-	@Bean
+	@Bean @Scope(value = "singleton")
 	public Hello hello() {
 		Hello hello = new Hello();
 		String propName = env.getProperty("myName3");
